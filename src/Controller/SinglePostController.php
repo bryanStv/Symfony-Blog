@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class SinglePostController extends AbstractController
 {
-    #[Route('/single/post', name: 'app_single_post')]
+    #[Route('/singlePost', name: 'app_single_post')]
     public function index(): Response
     {
         return $this->render('single_post.html.twig', [
