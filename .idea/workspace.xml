@@ -177,6 +177,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml.dist" scope="XML" use_alternative_configuration_file="true" />
@@ -205,7 +210,7 @@
       <workItem from="1726732339538" duration="2070000" />
       <workItem from="1726735253404" duration="46000" />
       <workItem from="1727164354794" duration="19000" />
-      <workItem from="1728544643840" duration="3408000" />
+      <workItem from="1728544643840" duration="3729000" />
     </task>
     <servers />
   </component>
