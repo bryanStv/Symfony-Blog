@@ -21,6 +21,8 @@
                 <li class="{{ (app.request.attributes.get('app_about') == 'index')  ? 'active': ''}} lien"><a href="{{ path('app_about') }}"><i class="fa fa-home sr-icons"></i> About</a></li>
                 <li class="{{ (app.request.attributes.get('app_blog') == 'index')  ? 'active': ''}} lien"><a href="{{ path('app_blog') }}"><i class="fa fa-home sr-icons"></i> Blog</a></li>
                 <li class="{{ (app.request.attributes.get('app_contact') == 'index')  ? 'active': ''}} lien"><a href="{{ path('app_contact') }}"><i class="fa fa-home sr-icons"></i> Contact</a></li>
+                <li class="{{ (app.request.attributes.get('login') == 'index')  ? 'active': ''}} lien"><a href="{{ path('login') }}"><i class="fa fa-home sr-icons"></i> Login</a></li>
+                <li class="{{ (app.request.attributes.get('app_register') == 'index')  ? 'active': ''}} lien"><a href="{{ path('app_register') }}"><i class="fa fa-home sr-icons"></i> Register</a></li>
             </ul>
         </div>
     </div>
