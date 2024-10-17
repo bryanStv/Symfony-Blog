@@ -29,7 +29,7 @@ class AdminController extends AbstractController
             $entityManager = $doctrine->getManager();
             $entityManager->persist($category);
             $entityManager->flush();
-            return $this->redirectToRoute('admin/categories', []);
+            return $this->redirectToRoute('app_categories', []);
         }
         return $this->render('admin/categories.html.twig', array(
             'form' => $form->createView()
