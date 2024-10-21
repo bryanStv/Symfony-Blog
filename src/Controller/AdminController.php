@@ -21,6 +21,10 @@ class AdminController extends AbstractController
     #[Route('/admin/categories', name: 'app_categories')]
     public function categories(ManagerRegistry $doctrine, Request $request): Response
     {
+        $repositorio = $doctrine->getRepository(Category::class);
+
+        $categories = $repositorio->findAll();
+
         $category = new Category();
         $form = $this->createForm(CategoryFormType::class, $category);
         $form->handleRequest($request);
@@ -29,10 +33,11 @@ class AdminController extends AbstractController
             $entityManager = $doctrine->getManager();
             $entityManager->persist($category);
             $entityManager->flush();
-            return $this->redirectToRoute('app_categories', []);
         }
         return $this->render('admin/categories.html.twig', array(
-            'form' => $form->createView()
+            'form' => $form->createView(),
+            'categories' => $categories
         ));
+
     }
 }
