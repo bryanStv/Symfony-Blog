@@ -21,5 +21,9 @@ services:
             - '../src/Kernel.php'
             - '../src/Tests/'
 
+    parameters:
+        images_directory: '%kernel.project_dir%/public/images/index/gallery'
+        portfolio_directory: '%kernel.project_dir%/public/images/index/portfolio'
+
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
