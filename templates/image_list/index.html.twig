@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Lista de Imágenes{% endblock %}
+
+{% block body %}
+    </div>
+    <hr class="divider">
+    <div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Imagen</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for image in files %}
+                <tr>
+                    <td>
+                        <img src="{{ asset('images/index/gallery/' ~ image) }}" alt="Descripción de la imagen" style="max-width: 150px;">
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="3">No se encontraron imágenes</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
