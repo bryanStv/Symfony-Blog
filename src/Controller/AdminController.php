@@ -52,11 +52,10 @@ class AdminController extends AbstractController
             $file = $form->get('file')->getData();
             if ($file) {
                 $originalFilename = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
-                // this is needed to safely include the file name as part of the URL
+
                 $safeFilename = $slugger->slug($originalFilename);
                 $newFilename = $safeFilename.'-'.uniqid().'.'.$file->guessExtension();
 
-                // Move the file to the directory where images are stored
                 try {
 
                     $file->move(
@@ -68,11 +67,9 @@ class AdminController extends AbstractController
                         $this->getParameter('portfolio_directory') . '/'.  $newFilename, true);
 
                 } catch (FileException $e) {
-                    // ... handle exception if something happens during file upload
+
                 }
 
-                // updates the 'file$filename' property to store the PDF file name
-                // instead of its contents
                 $image->setFile($newFilename);
             }
             $image = $form->getData();
