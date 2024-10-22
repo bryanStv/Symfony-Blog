@@ -9,13 +9,14 @@
         <div class="row">
 
             <!-- Blocks of Posts -->
-            {% for post in posts %}
-                {{ include ('partials/_post.html.twig', {'post': post}) }}
-            {% endfor %}
 
             <div class="col-xs-12 col-sm-8 row">
+                {% for post in posts %}
+                    {{ include ('partials/_post.html.twig', {'post': post}) }}
+                {% endfor %}
                 <div class="col-xs-12 col-sm-12">
                     <div class="post">
+
                         <div class="post-heading">
                             <span>6 JANUARY</span>
                             <img class="img-responsive" src="images/blog/landscape.jpg" alt="post's picture">
