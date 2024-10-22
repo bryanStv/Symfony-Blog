@@ -8,6 +8,11 @@
 /var/
 /vendor/
 /.idea/
+.idea/
+.idea/*
+/.idea
+.idea
+.idea/workspace.xml
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
