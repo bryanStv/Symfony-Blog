@@ -51,9 +51,7 @@ class PostController extends AbstractController
             $entityManager = $doctrine->getManager();
             $entityManager->persist($post);
             $entityManager->flush();
-            return $this->render('blog/new_post.html.twig', array(
-                'form' => $form->createView()
-            ));
+            return $this->redirectToRoute('app_single_post', ["slug" => $post->getSlug()]);
         }
         return $this->render('blog/new_post.html.twig', array(
             'form' => $form->createView()

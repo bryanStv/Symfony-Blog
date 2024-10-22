@@ -20,7 +20,7 @@ class Post
     private ?string $title = null;
 
     #[ORM\Column(type: Types::TEXT)]
-    #[Assert\NotBlank(message: "Campo obligatorio")]
+    #[Assert\NotBlank(message: "Campo contenido obligatorio")]
     private ?string $content = null;
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
@@ -30,7 +30,6 @@ class Post
     private ?User $postUser = null;
 
     #[ORM\Column(length: 255)]
-    #[Assert\NotBlank(message: "Campo titulo obligatorio")]
     private ?string $image = null;
 
     #[ORM\Column(length: 255)]

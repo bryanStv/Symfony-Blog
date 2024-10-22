@@ -9,6 +9,10 @@
         <div class="row">
 
             <!-- Blocks of Posts -->
+            {% for post in posts %}
+                {{ include ('partials/_post.html.twig', {'post': post}) }}
+            {% endfor %}
+
             <div class="col-xs-12 col-sm-8 row">
                 <div class="col-xs-12 col-sm-12">
                     <div class="post">
