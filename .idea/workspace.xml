@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d9f092c-b104-48c4-9d71-49d1c21f393d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/index/gallery/pj-671748aa5afdc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/index/portfolio/pj-671748aa5afdc.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/PostFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PostFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SinglePostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SinglePostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/single_post.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/single_post.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +29,12 @@
     &quot;assignee&quot;: &quot;bryanStv&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/bryanStv/Symfony-Blog.git",
-    "accountId": "69fa3513-6d96-4ffe-b4aa-e48ea39aa2a7"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/bryanStv/Symfony-Blog.git&quot;,
+    &quot;accountId&quot;: &quot;69fa3513-6d96-4ffe-b4aa-e48ea39aa2a7&quot;
   }
-}]]></component>
+}</component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
@@ -182,20 +180,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/alumno/Documentos/DWES/1EV/Symfony-Blog",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alumno/Documentos/DWES/1EV/Symfony-Blog&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/admin" />
@@ -235,7 +233,7 @@
       <workItem from="1729151720452" duration="3429000" />
       <workItem from="1729490889754" duration="6218000" />
       <workItem from="1729531967734" duration="6544000" />
-      <workItem from="1729578376902" duration="2163000" />
+      <workItem from="1729578376902" duration="2910000" />
     </task>
     <servers />
   </component>
