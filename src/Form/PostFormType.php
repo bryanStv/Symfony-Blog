@@ -31,15 +31,6 @@ class PostFormType extends AbstractType
             ])
             ->add('Send', SubmitType::class);
         ;
-           /* ->add('title')
-            ->add('content')
-            ->add('publishedAt')
-            ->add('image')
-            ->add('slug')
-            ->add('numLikes')
-            ->add('numComments')
-            ->add('postUser')
-        ;*/
     }
 
     public function configureOptions(OptionsResolver $resolver): void
