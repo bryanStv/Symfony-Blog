@@ -7,6 +7,7 @@ use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Repository\PostRepository;
 
 class BlogController extends AbstractController
 {
@@ -19,13 +20,15 @@ class BlogController extends AbstractController
     }*/
 
     #[Route('/blog', name: 'app_blog')]
-    public function index(ManagerRegistry $doctrine, int $page = 1): Response
+    public function index(PostRepository $postRepository,ManagerRegistry $doctrine, int $page = 1): Response
     {
         $repository = $doctrine->getRepository(Post::class);
         $posts = $repository->findAll($page);
+        $recents = $postRepository->findRecents();
 
         return $this->render('blog.html.twig', [
             'posts' => $posts,
+            'recents' => $recents
         ]);
     }
 
